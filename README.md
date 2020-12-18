@@ -35,6 +35,6 @@ The project comprises the following:
 5. Set public folder for css style
 6. use morgan for logging
 #### Routing section
-    a. get and render homepage, about page and redirect about-me
-    b. use blogroutes for routing to blog views
-    c. get and rednder 404 page
+  1. get and render homepage, about page and redirect about-me
+  2. use blogroutes for routing to blog views
+  3. get and rednder 404 page
