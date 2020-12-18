@@ -18,8 +18,8 @@ const app = express();
 
 //Note: Mongoose setup
 //MongoDb Connection String
-const dbUri = 'mongodb+srv://project0_tester:JPKW5M8pkoRdPI9p@cluster0.gmamc.mongodb.net/project_0_db?retryWrites=true&w=majority';
-// Vv4HtzqILii1MLdg //Admin
+const dbUri = 'mongodb+srv://project0_tester:*******************@cluster0.gmamc.mongodb.net/project_0_db?retryWrites=true&w=majority';
+// 
 mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true }) //options added to stop an library error.
     .then((response) => {
         console.log('Project:0 DB Connection Established.'),
