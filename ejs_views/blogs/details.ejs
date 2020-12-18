@@ -1,0 +1,46 @@
+<html lang="en">
+
+
+
+<%- include('../partials/head.ejs') %>
+
+<body>
+
+    <%- include('../partials/nav.ejs') %>
+
+    <!-- the data for 'blog' gets passed to this page -->
+    <div class="details content">
+        <h2><%= blog.title %> </h2>
+        <div class="content">
+            <p><%= blog.body %> </p>
+        </div>
+        <a class="delete" data-doc="<%= blog._id %> ">
+            <img src="/trashcan.svg" alt="delete icon">
+        </a>
+    </div>
+
+    <!-- this script runs in the browser not on the server -->
+    <script>
+        const bin = document.querySelector('a.delete');
+
+        bin.addEventListener('click', (e) => {
+            const myEndPoint = `/blogs/${bin.dataset.doc}`;
+
+            // This section will receive the JSON text sent from app.delete()
+            fetch(myEndPoint, {
+                method: 'DELETE'
+                // Convert json so it can be used here.
+            })
+                .then(response => response.json())
+                // redirect back to blogs page
+                .then(data => window.location.href = data.redirect)
+                .catch(e => console.log(e));
+        });
+
+    </script>
+
+
+</body>
+<%- include('../partials/footer.ejs') %>
+
+</html>
