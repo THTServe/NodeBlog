@@ -5,7 +5,7 @@ This is a NodeJs Project that builds a blog Website.
 It allow a regitered user to add new blogs to the site.
 The Blogs are stored in a MongoDB Database and the pages dynamically conructed when a blog is selected.
 
-Many thanks to [Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg) for his guidance in building this.  
+Many thanks to [Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg) for his fab guidance on nodejs.  
 
 ## Structure
 The project comprises the following:
