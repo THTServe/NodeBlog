@@ -25,3 +25,16 @@ The project comprises the following:
 * Models - Holds DB Schema for MongoDB
 * Public - Stylesheet for css settings
 * Routes - Express routing file
+
+### Files
+#### App.js - main file.
+1. Add 3rd party apps
+2. Create **const app = express()**
+3. Setup DB connction string, connect then listen on port 3000
+4. Set up ejs as view engine with default location
+5. Set public folder for css style
+6. use morgan for logging
+#### Routing section
+    a. get and render homepage, about page and redirect about-me
+    b. use blogroutes for routing to blog views
+    c. get and rednder 404 page
